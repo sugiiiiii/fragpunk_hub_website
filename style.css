@@ -59,6 +59,7 @@ src: local('D-DIN Exp DINExp-Bold'), url('./assets/fonts/D-DINExp-Bold.woff') fo
 
 :root {
     --primary-color: #C9FA3E;
+    --accent-color: #FE4C90;
     --border-color: rgba(255, 255, 255, 0.15);
     --background-overlay: rgba(0, 0, 0, 0.5);
     --black-txt:rgb(23, 22, 18);
@@ -101,13 +102,20 @@ body {
     font-size: 18px;
     font-family: "D-DIN DIN-Bold";
 }
+.btn:hover {
+    transition: 200ms all;
+    outline-offset: .3em;
+    outline-color: var(--primary-color);
+    background: rgb(168,213,37);
+    background: linear-gradient(0deg, rgb(149, 191, 23) 0%, rgba(201,250,62,1) 25%);
+}
 
 /* Main button (Discord) */
-.btn#primary img {
+.btn#discord svg {
     width: 27px;
     margin-right: 0.8em;
 }
-.btn#primary {
+.btn#discord {
     padding-block: 20px;
 }
 
@@ -126,6 +134,13 @@ body {
     font-family: "D-DIN DIN-Bold";
     justify-content: space-between;
     text-align: center;
+}
+.labelled:hover {
+    transition: 200ms all;
+    outline-offset: .3em;
+    outline-color: var(--primary-color);
+    background: rgb(168,213,37);
+    background: linear-gradient(0deg, rgb(149, 191, 23) 0%, rgba(201,250,62,1) 25%);
 }
 
 /* Section with socials */
